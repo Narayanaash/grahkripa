@@ -1,0 +1,36 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.caption-1, .caption-2, .caption-3, .caption-4, .caption-5 {
+	}
+	.float-none-mobile {
+		float: none !important;
+		padding: 0 !important;
+	}
+	.float-none-mobile img {
+		width: 100% !important;
+	}
+	.image_placeholder img {
+		width: 100% !important;
+	}
+	.contact_us {
+    margin-top: 100px !important;
+	}
+	.img-responsive {
+		margin: auto;
+	}
+	#gallery img {
+		margin-bottom: 10px;
+	}
+	.home-content-main {
+    	padding: 30px 0 !important;
+	}
+	.carousel-nevigation > .next, .carousel-nevigation > .prev {
+		width: 35px !important;
+    	height: 35px !important;
+    	padding-top: 3px !important;
+	}
+	.carousel-nevigation {
+		top:33% !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}

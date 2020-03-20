@@ -1,0 +1,708 @@
+body {
+	background: url(../images/content/home_bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+  transition: background 1s linear;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;    
+}
+#overlay {
+  background: url(../images/content/overlay.png);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.load_image {
+ display:none;
+ content: url(../images/home/kundalih.jpg)
+          url(../images/content/overlay.png)
+          url(../images/home/muhurath.jpg)
+          url(../images/home/palmh.jpg)
+          url(../images/home/payh.jpg)
+          url(../images/home/pujanh.jpg)
+          url(../images/home/vastuh.jpg)
+          url(../images/home/vedashramh.jpg)
+          url(../images/home/kundalidosh.jpg)
+          url(../images/home/janmkundalih.jpg)
+          url(../images/ratna/ratnah.jpg)
+          url(../images/panchang/panchangh.png)
+          url("../images/yagya/yagyah.jpg")
+          url(../images/home/kundalimilanh.jpg)
+          url('../images/content/home_bg_2.jpg')
+          url('../images/content/home_bg_3.jpg')
+          url('../images/content/home_bg_4.jpg');
+}
+.float-left {
+  float: left !important;
+  background-color: #35a5e0;
+}
+.fixed_home {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 80px;
+	width: 80px;
+	background-color: rgba(0,0,0,.3);
+	z-index: 99999;
+	border-radius: 50%;
+}
+.fixed_home a {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: url(../images/content/kali.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: slide 5s infinite;
+    box-shadow: 0 0px 6px 0px #00000047;
+}
+
+@-webkit-keyframes slide
+{
+    0%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    50%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    80%   {background-image: url("../images/content/kali.png"); background-size: 134%;}
+    100% {background-image: url("../images/content/home.png"); background-size: 50%;}
+}
+
+@-moz-keyframes slide
+{
+    0%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    50%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    80%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    100% {background-image: url("../images/content/home.png"); background-size: 50%;}
+}
+
+@keyframes slide
+{
+    0%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    50%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    80%   {background-image: url("../images/content/kali.png"); background-size: 110%;}
+    100% {background-image: url("../images/content/home.png"); background-size: 50%;}
+}
+
+.footer_bottom_cont_wrapper p span {
+	padding: 0 20px;
+}
+.slider-area {
+	margin-top: 50px;
+	box-shadow: 0 0 20px #00000057;
+}
+.clearfix {
+    float: none!important;
+}
+.main-nav {
+    margin: 0 auto;
+}
+.main-nav li {
+    display: inline-block;
+}
+.main-nav li a {
+    position: relative;
+    display: inline-block;
+    height: 180px;
+    width: 180px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+     -webkit-transition: .5s; 
+    -moz-transition: .5s;
+     transition: .5s; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 2px 0 #000;
+}
+.kundali {
+    background-image: url(../images/home/kundali.jpg);
+}
+.kundali_dosh {
+  background-image: url(../images/home/kundalidos.jpg);
+}
+.kundali_dosh:hover {
+  background-image: url(../images/home/kundalidosh.jpg);
+}
+.kundali_dosh2 {
+  background-image: url(../images/vedvidya/nitya.jpg);
+}
+.kundali_dosh2:hover {
+  background-image: url(../images/vedvidya/nityah.jpg);
+}
+.janm_kundali {
+  background-image: url(../images/home/janmkundali.jpg);
+}
+.janm_kundali:hover {
+  background-image: url("../images/home/janmkundalih.jpg");
+}
+.main-nav li a span {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+    border: 1px solid rgba(255,255,255,.4);
+    color: rgba(255,255,255,1);
+    padding: 5px;
+    width: 80%;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 16px;
+    text-shadow: 0 0 8px #000;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+    text-align: center;
+    line-height: 23px;
+}
+.poojan {
+    background-image: url(../images/home/vastu.jpg);
+}
+.kundali_milan {
+  background-image: url(../images/home/kundalimilan.jpg);
+}
+.kundali_milan:hover {
+  background-image: url(../images/home/kundalimilanh.jpg);
+}
+.poojan:hover {
+    background-image: url(../images/home/vastuh.jpg);
+}
+.poojan:before {
+    content: url(../images/home/poojanh.png);
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.main-nav li a:hover
+{
+	 -webkit-transition:.5s; 
+	-moz-transition:.5s;
+	 transition:.5s; 
+}
+.main-nav li a:hover span
+{
+	border:1px solid rgba(255,255,255,1);
+}
+.kundali:before
+{
+	content: url("images/menu/kundalih.jpg");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.kundali:hover
+{
+	background-image: url("../images/home/kundalih.jpg");
+}
+
+.gharelu
+{
+	background-image: url("images/menu/gharelu.png");
+}
+.gharelu:before
+{
+	content: url("images/menu/ghareluh.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.gharelu:hover
+{
+	background-image: url("images/menu/ghareluh.png");
+}
+
+.gharelu
+{
+	background-image: url("images/menu/gharelu.png");
+}
+.gharelu:before
+{
+	content: url("images/menu/ghareluh.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.gharelu:hover
+{
+	background-image: url("images/menu/ghareluh.png");
+}
+.mitty
+{
+	background-image: url("images/menu/mitty.png");
+}
+.mitty:before
+{
+	content: url("images/menu/mittyh.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.mitty:hover
+{
+	background-image: url("images/menu/mittyh.png");
+}
+.hand
+{
+	background-image: url("../images/home/vedashram.jpg");
+}
+.hand2
+{
+  background-image: url("../images/home/vedashram.jpg");
+}
+.hand2:hover
+{
+  background-image: url("../images/home/vedashramh.jpg");
+}
+.hand:before
+{
+	content: url("images/menu/palmh.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.hand:hover
+{
+	background-image: url("../images/home/vedashramh.jpg");
+}
+.naksha
+{
+  background-image: url("../images/home/palm.jpg");
+}
+.naksha2
+{
+	background-image: url("../images/home/palm.jpg");
+}
+.ratna
+{
+  background-image: url("../images/ratna/ratna.jpg");
+}
+.ratna:hover
+{
+  background-image: url("../images/ratna/ratnah.jpg");
+}
+.naksha2:hover
+{
+  background-image: url("../images/home/palmh.jpg");
+}
+.naksha:before
+{
+	content: url("images/menu/maph.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.naksha:hover
+{
+	background-image: url("../images/home/palmh.jpg");
+}
+.phone
+{
+	background-image: url("../images/home/muhurat.jpg");
+}
+.phone:before
+{
+	content: url("images/menu/phone1.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.phone:hover
+{
+	background-image: url("../images/home/muhurath.jpg");
+}
+.vichar
+{
+	background-image: url("images/menu/vichar.png");
+}
+.panchang {
+  background-image: url("../images/panchang/panchang.png");
+}
+.panchang:hover {
+  background-image: url("../images/panchang/panchangh.png");
+}
+.muhurat {
+  background-image: url("../images/home/muhurat.jpg");
+}
+.muhurat:hover {
+  background-image: url("../images/home/muhurath.jpg");
+}
+.vichar:before
+{
+	content: url("images/menu/vicharh.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.vichar:hover
+{
+	background-image: url("images/menu/vicharh.png");	
+}
+.stroy
+{
+	background-image: url("images/menu/kahani.png");
+}
+.stroy:before
+{
+	content: url("images/menu/kahanih.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.stroy:hover
+{
+	background-image: url("images/menu/kahanih.png");
+}
+.payNow
+{
+	background-image: url("../images/home/pay.jpg");
+  display: block;
+  background-color: white;
+  margin: 0 45px 0 30px;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 2px 0 #000;
+}
+.payNow span {
+  background: rgba(0,0,0,.6);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+  border: 1px solid rgba(255,255,255,.4);
+  text-shadow: 0 0 8px #000;
+}
+.payNow:hover span {
+  border: 1px solid rgba(255,255,255,1);
+  transition: .5s;
+}
+.vaidik_pujan, .vaidik_pujan2  {
+  background-image: url("../images/home/pujan.jpg");
+}
+.yagya {
+  background-image: url("../images/yagya/yagya.jpg");
+}
+.yagya:hover {
+  background-image: url("../images/yagya/yagyah.jpg");
+}
+.vaidik_pujan:hover, .vaidik_pujan2:hover {
+  background-image: url("../images/home/pujanh.jpg");
+}
+.vaidik_pujan:before
+{
+  content: url("images/menu/paymenth.png");
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+.payNow:before
+{
+	content: url("images/menu/paymenth.png");
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.payNow:hover
+{
+	background-image: url("../images/home/payh.jpg");
+}
+/*.form-group {
+    margin-bottom: 10px;
+}*/
+.form-control {
+    color: #000;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin-bottom: 11px;
+}
+.form-control::-webkit-input-placeholder { color: #333; }
+.form-control:-moz-placeholder { color: #333; }
+.form-control::-moz-placeholder { color: #333; }
+.form-control:-ms-input-placeholder { color: #333; }
+
+label
+{
+	font-weight:400;
+}
+.form-horizontal .radio
+{
+	padding-top:0;
+}
+input[type=radio],
+input[type=checkbox] 
+{
+	outline:none;
+    padding-left:5px;
+    padding-right:5px;
+	margin:6px 0 0;
+    -webkit-appearance:none;
+	-moz-appearance:none;
+/*	appearance:none;
+*/
+    border:2px solid #ccc;
+
+    background-color:#FFF;
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+	vertical-align:middle;
+}
+input[type=radio]:active
+{
+	outline:none;
+	background:#999;
+}
+input[type=radio]
+{
+	width:16px;
+    height:16px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+input[type=checkbox] 
+{
+	width:14px;
+    height:14px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	-moz-border-radius:2px;
+}
+
+input[type=radio]:checked 
+{
+	outline:none;	
+    background-color:#999;
+	-webkit-box-shadow:inset 0 0 0 2px #FFFFFF,0 0 1px 0 #999;
+	-moz-box-shadow:inset 0 0 0 2px #FFFFFF,0 0 1px 0 #999;
+	box-shadow:inset 0 0 0 2px #FFFFFF,0 0 1px 0 #999;
+}
+input[type=checkbox]:checked 
+{
+	content:"";
+	background:url("images/check.png") center center no-repeat;
+}
+
+/*input[type=file]::-webkit-file-upload-button {
+  visibility: hidden;
+}*/
+/*input[type=file]:before {
+  content: 'Select some files';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}*/
+/*input[type=file]:hover:before {
+  border-color: black;
+}
+input[type=file]:active:before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}*/
+.pl-lg {
+    padding-left: 15px;
+}
+legend {
+	color: #dadada !important;
+}
+.home-content-main {
+    padding: 30px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    box-shadow: 0 0 20px #00000057;
+}
+.tooltip > .tooltip-inner {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.contact_us {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #d0d0d0;
+}
+/*.image_placeholder {
+    width: 100%;
+    height: 532px;
+    overflow: hidden;
+}*/
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.text-center img {
+  padding: 10px 0;
+}
+p {
+  padding: 10px 0;
+}
+.Copyright {
+  font-size: 12px !important;
+  color: #cacaca;
+}
+.hastrekha img {
+/*  border-width: 5px;
+  border-style: ridge;
+  border-color: red;*/
+  padding: 0;
+}
+.red {
+  color: #ff0000;
+  font-weight: 600;
+  text-shadow: 2px -1px 2px #000000d1;
+}
+.blue {
+  color: #35a5e0;
+}
+.green {
+  color: #04c53d;
+}
+.image_placeholder img {
+  width: 50%;
+}
+.contact_details {
+  padding-top: 25px;
+}
+.mt-xl, .h4 {
+  font-weight: 500;
+}
+.entry-header {
+  background-color: #35a5e0;
+  height: 55px;
+}
+.entry-header h1 {
+  padding: 15px;
+}
+.entry-header h1 marquee a {
+  color: #000;
+  font-weight: normal;
+  line-height: 29px;
+  font-size: 85%;
+}
+#gallery{
+  -webkit-column-count:4;
+  -moz-column-count:4;
+  column-count:4;
+  
+  -webkit-column-gap:20px;
+  -moz-column-gap:20px;
+  column-gap:20px;
+}
+@media (max-width:1200px){
+  #gallery{
+  -webkit-column-count:3;
+  -moz-column-count:3;
+  column-count:3;
+    
+  -webkit-column-gap:20px;
+  -moz-column-gap:20px;
+  column-gap:20px;
+}
+}
+@media (max-width:800px){
+  #gallery{
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+    
+  -webkit-column-gap:20px;
+  -moz-column-gap:20px;
+  column-gap:20px;
+}
+}
+@media (max-width:600px){
+  #gallery{
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
+}  
+}
+.card{
+  width:100%;
+  height:auto;
+  margin: 0 auto 8% auto;
+  box-shadow:-3px 5px 15px #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.modal-img,.model-vid{
+  width:100%;
+  height:auto;
+}
+.modal-body{
+  padding:0px;
+}
+.modal-open .modal {
+    z-index: 99999;
+}
+.modal-content, .modal-body {
+  border: 0 !important;
+}
+.pagination {
+  margin-top: 40px;
+}
+.payment_label {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  color: #777;
+  font-size: 15px;
+  line-height: 34px;
+}
+.invalid-feedback strong {
+    font-weight: normal;
+    font-size: 15px;
+    color: #fb1a1a;
+}
