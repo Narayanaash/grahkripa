@@ -19,9 +19,9 @@ class MailController extends Controller
         $header = array(
             'Accept: application/json',
             'Content-Type: application/json',
-            'Authorization: Bearer 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'
+            'Authorization: Bearer <api_here>'
         );
-        $data = '{"personalizations": [{"to": [{"email": "ankm786@gmail.com"}]}],"from": {"email": "test@example.com"},"subject": "Sending with SendGrid is Fun","content": [{"type": "text/plain", "value": "and easy to do anywhere, even with cURL"}]}';
+        $data = '{"personalizations": [{"to": [{"email": "email@gmail.com"}]}],"from": {"email": "test@example.com"},"subject": "Sending with SendGrid is Fun","content": [{"type": "text/plain", "value": "and easy to do anywhere, even with cURL"}]}';
 
         curl_setopt($ch, CURLOPT_URL, "https://api.sendgrid.com/v3/mail/send");
         // SSL important
@@ -94,7 +94,7 @@ class MailController extends Controller
     ];
 
       
-     Mail::to('ankm786@gmail.com')->send(new ContactEmail($data));
+     Mail::to('email@gmail.com')->send(new ContactEmail($data));
 
      return redirect()->back();
 
